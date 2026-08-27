@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.1.0"
+  version: "0.2.0"
 
 package:
   name: elm-diagnostics
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/e/elm-diagnostics/elm_diagnostics-${{ version }}.tar.gz
-  sha256: 260001fc4efaaf6832128ceeb89f719ee6107eabc4a1b14020379929c70dc682
+  sha256: 8278767b381585b1c0743c966d91c93461d2472234208c4a3f0d57e5239325f2
 
 build:
   number: 0
@@ -47,7 +47,7 @@ tests:
       imports:
         - elm_diagnostics
       pip_check: true
-      python_version: 
+      python_version:
         - ${{ python_min }}.*
         - '*'
   - script:
